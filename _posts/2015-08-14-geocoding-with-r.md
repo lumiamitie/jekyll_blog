@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 published: true
 title: Geocoding with R
