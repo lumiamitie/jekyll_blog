@@ -1,4 +1,4 @@
----
+ï»¿---
 layout: post
 published: true
 title: Geocoding with R
@@ -12,13 +12,13 @@ tags: jekyll
 
 ![cover-image](../../images/rocks-waves.jpg)
 
-## ggmap::geocode ÇÔ¼ö¸¦ ÀÌ¿ëÇÑ Áö¿ÀÄÚµù
+## ggmap::geocode í•¨ìˆ˜ë¥¼ ì´ìš©í•œ ì§€ì˜¤ì½”ë”©
 
-**ggmap** ÆÐÅ°Áö¿¡´Â **geocode**¶ó´Â ÇÔ¼ö°¡ ÀÖ´Ù
+**ggmap** íŒ¨í‚¤ì§€ì—ëŠ” **geocode**ë¼ëŠ” í•¨ìˆ˜ê°€ ìžˆë‹¤
 
-Áö¸íÀ» ÀÎÀÚ·Î ³Ö¾îÁÖ¸é À§µµ¿Í °æµµ°ªÀ» ¹ÝÈ¯ÇØÁÖ°í, ¿É¼Ç¿¡ µû¶ó ´õ ¸¹Àº Á¤º¸¸¦ ºÒ·¯¿À±âµµ ÇÑ´Ù
+ì§€ëª…ì„ ì¸ìžë¡œ ë„£ì–´ì£¼ë©´ ìœ„ë„ì™€ ê²½ë„ê°’ì„ ë°˜í™˜í•´ì£¼ê³ , ì˜µì…˜ì— ë”°ë¼ ë” ë§Žì€ ì •ë³´ë¥¼ ë¶ˆëŸ¬ì˜¤ê¸°ë„ í•œë‹¤
 
-±×·±µ¥ ¾ð¾î°¡ ¿µ¹®À¸·Î °íÁ¤µÇ¾î ÀÖ±â ¶§¹®ÀÎÁö ¿µ¹®Áö¸íÀ¸·Î ÀÔ·ÂÇØ¾ß ÇÏ°í ¹ÝÈ¯µÇ´Â °ª ¶ÇÇÑ ¿µ¹®ÁÖ¼Ò°¡ ¹ÝÈ¯µÈ´Ù
+ê·¸ëŸ°ë° ì–¸ì–´ê°€ ì˜ë¬¸ìœ¼ë¡œ ê³ ì •ë˜ì–´ ìžˆê¸° ë•Œë¬¸ì¸ì§€ ì˜ë¬¸ì§€ëª…ìœ¼ë¡œ ìž…ë ¥í•´ì•¼ í•˜ê³  ë°˜í™˜ë˜ëŠ” ê°’ ë˜í•œ ì˜ë¬¸ì£¼ì†Œê°€ ë°˜í™˜ëœë‹¤
 
 
 ```r
@@ -66,42 +66,42 @@ geocode('Seoul', output='more')
 ## 1 Seoul
 ```
 
-¾Æ·¡¿Í °°ÀÌ ÇÑ±Û·Î Áö¸íÀ» ÀÔ·ÂÇÏ¸é ¿À·ù°¡ ³­´Ù.
+ì•„ëž˜ì™€ ê°™ì´ í•œê¸€ë¡œ ì§€ëª…ì„ ìž…ë ¥í•˜ë©´ ì˜¤ë¥˜ê°€ ë‚œë‹¤.
 
-`geocode('¼­¿ï')`
+`geocode('ì„œìš¸')`
 
-¿É¼ÇÀ» ÀÏºÎ º¯°æÇÏ¸é ÇÑ±Ûµµ »ç¿ëÇÒ ¼ö ÀÖÁö ¾ÊÀ»±î ÇÏ°í »ý°¢ÇßÁö¸¸ ¾ÆÁ÷±îÁö´Â ¹æ¹ýÀ» Ã£Áö ¸øÇß´Ù
+ì˜µì…˜ì„ ì¼ë¶€ ë³€ê²½í•˜ë©´ í•œê¸€ë„ ì‚¬ìš©í•  ìˆ˜ ìžˆì§€ ì•Šì„ê¹Œ í•˜ê³  ìƒê°í–ˆì§€ë§Œ ì•„ì§ê¹Œì§€ëŠ” ë°©ë²•ì„ ì°¾ì§€ ëª»í–ˆë‹¤
 
-ÇÑ±ÛÁö¸íÀ¸·Î ÀÔ·ÂÇÏ¼­ ÇÑ±ÛÁÖ¼Ò¸¦ ¹ÝÈ¯¹ÞÀ¸·Á¸é ¾î¶»°Ô ÇØ¾ßÇÒ±î?
+í•œê¸€ì§€ëª…ìœ¼ë¡œ ìž…ë ¥í•˜ì„œ í•œê¸€ì£¼ì†Œë¥¼ ë°˜í™˜ë°›ìœ¼ë ¤ë©´ ì–´ë–»ê²Œ í•´ì•¼í• ê¹Œ?
 
 
 ---
 
 ## Geocoding with Google API (+rvest)
 
-ÀÏ´Ü ¿©±â¼­´Â À§µµ¿Í °æµµ ÀÚ·á¸¸ °¡Áö°í ¿À·Á°í ÇÑ´Ù
+ì¼ë‹¨ ì—¬ê¸°ì„œëŠ” ìœ„ë„ì™€ ê²½ë„ ìžë£Œë§Œ ê°€ì§€ê³  ì˜¤ë ¤ê³  í•œë‹¤
 
 
-`http://maps.googleapis.com/maps/api/geocode/xml?sensor=false&language=ko&address='¼­¿ï'`
+`http://maps.googleapis.com/maps/api/geocode/xml?sensor=false&language=ko&address='ì„œìš¸'`
 
-À¥ºê¶ó¿ìÀú¿¡¼­ À§ url·Î µé¾î°¡º¸¸é xml µ¥ÀÌÅÍ¸¦ º¼ ¼ö ÀÖ´Ù
+ì›¹ë¸Œë¼ìš°ì €ì—ì„œ ìœ„ urlë¡œ ë“¤ì–´ê°€ë³´ë©´ xml ë°ì´í„°ë¥¼ ë³¼ ìˆ˜ ìžˆë‹¤
 
-url Áß°£¿¡ ÀÖ´Â xmlÀ» jsonÀ¸·Î ¹Ù²ãÁÖ¸é json ÇüÅÂÀÇ ÀÚ·áµµ ¹ÞÀ» ¼ö ÀÖ´Ù
+url ì¤‘ê°„ì— ìžˆëŠ” xmlì„ jsonìœ¼ë¡œ ë°”ê¿”ì£¼ë©´ json í˜•íƒœì˜ ìžë£Œë„ ë°›ì„ ìˆ˜ ìžˆë‹¤
 
 ---
 
-±×·¯¸é ¾Æ·¡¿¡¼­´Â `rvest`ÆÐÅ°Áö¸¦ ÀÌ¿ëÇØ À§ ÁÖ¼ÒÀÇ xmlÀÚ·á¸¦ °¡Á®¿À°í ¿øÇÏ´Â Ç×¸ñ¸¸ Á¤¸®ÇØº¸·Á°í ÇÑ´Ù
+ê·¸ëŸ¬ë©´ ì•„ëž˜ì—ì„œëŠ” `rvest`íŒ¨í‚¤ì§€ë¥¼ ì´ìš©í•´ ìœ„ ì£¼ì†Œì˜ xmlìžë£Œë¥¼ ê°€ì ¸ì˜¤ê³  ì›í•˜ëŠ” í•­ëª©ë§Œ ì •ë¦¬í•´ë³´ë ¤ê³  í•œë‹¤
 
 
 ```r
 library(rvest)
-url = "http://maps.googleapis.com/maps/api/geocode/xml?sensor=false&language=ko&address='¼­¿ï'"
+url = "http://maps.googleapis.com/maps/api/geocode/xml?sensor=false&language=ko&address='ì„œìš¸'"
 seoul_xml = xml(url, encoding='UTF-8')
 ```
 
 ---
 
-location ÅÂ±×¸¦ °Ë»öÇÏ¸é ÇÏÀ§ Ç×¸ñ¿¡ À§µµ, °æµµ ÀÚ·á°¡ ÀÖ´Â °ÍÀ» º¼ ¼ö ÀÖ´Ù 
+location íƒœê·¸ë¥¼ ê²€ìƒ‰í•˜ë©´ í•˜ìœ„ í•­ëª©ì— ìœ„ë„, ê²½ë„ ìžë£Œê°€ ìžˆëŠ” ê²ƒì„ ë³¼ ìˆ˜ ìžˆë‹¤ 
 
 
 ```r
@@ -118,7 +118,7 @@ seoul_xml %>%
 
 ---
 
-¾Æ·¡ Ã³·³ ÀÚ½ÄÇ×¸ñÀÇ ÅØ½ºÆ®¸¦ ÇÑ²¨¹ø¿¡ ¹Þ¾Æ¿Íµµ µÇ°í
+ì•„ëž˜ ì²˜ëŸ¼ ìžì‹í•­ëª©ì˜ í…ìŠ¤íŠ¸ë¥¼ í•œêº¼ë²ˆì— ë°›ì•„ì™€ë„ ë˜ê³ 
 
 
 ```r
@@ -135,7 +135,7 @@ seoul_xml %>%
 
 ---
 
-¾Æ·¡Ã³·³ ÇÊ¿äÇÑ Ç×¸ñ¿¡ Á÷Á¢ Á¢±ÙÇØ¼­ ¹Þ¾Æ¿Íµµ µÈ´Ù
+ì•„ëž˜ì²˜ëŸ¼ í•„ìš”í•œ í•­ëª©ì— ì§ì ‘ ì ‘ê·¼í•´ì„œ ë°›ì•„ì™€ë„ ëœë‹¤
 
 
 ```r
@@ -150,49 +150,49 @@ seoul_xml %>%
 
 ---
 
-±âº»ÀûÀÎ ¹æ¹ýÀ» ¾Ë¾ÒÀ¸´Ï º¹¼öÀÇ Áö¸í¿¡ ´ëÇØ¼­ À§µµ/°æµµ ÀÚ·á¸¦ °¡Áö°í ¿ÀÀÚ
+ê¸°ë³¸ì ì¸ ë°©ë²•ì„ ì•Œì•˜ìœ¼ë‹ˆ ë³µìˆ˜ì˜ ì§€ëª…ì— ëŒ€í•´ì„œ ìœ„ë„/ê²½ë„ ìžë£Œë¥¼ ê°€ì§€ê³  ì˜¤ìž
 
-¿©±â¼­´Â ¿ì¼± Áö¸í¿¡ ´ëÇÑ ¸ñ·ÏÀ» ÀÛ¼ºÇÑ ÈÄ¿¡
+ì—¬ê¸°ì„œëŠ” ìš°ì„  ì§€ëª…ì— ëŒ€í•œ ëª©ë¡ì„ ìž‘ì„±í•œ í›„ì—
 
-°¢ Áö¸í¿¡ ´ëÇØ api·Î Á¢±ÙÇØ¼­ À§µµ, °æµµ°ªÀ» ¹Þ¾Æ¿À°í
+ê° ì§€ëª…ì— ëŒ€í•´ apië¡œ ì ‘ê·¼í•´ì„œ ìœ„ë„, ê²½ë„ê°’ì„ ë°›ì•„ì˜¤ê³ 
 
-ÀÌ ÀÛ¾÷À» for ¹®À» ÀÌ¿ëÇØ ¹Ýº¹ÇØ¼­ ¿øÇÏ´Â °á°ú¸¦ ¾òÀ¸·Á°í ÇÑ´Ù
+ì´ ìž‘ì—…ì„ for ë¬¸ì„ ì´ìš©í•´ ë°˜ë³µí•´ì„œ ì›í•˜ëŠ” ê²°ê³¼ë¥¼ ì–»ìœ¼ë ¤ê³  í•œë‹¤
 
 
 ```r
-# À§µµ,°æµµ°ªÀ» ¾òÀ¸·Á°í ÇÏ´Â Áö¸íÀÇ ¸ñ·ÏÀÌ´Ù
-loc_list = c('¼­¿ï', '´ëÀü', 'ºÎ»ê')
+# ìœ„ë„,ê²½ë„ê°’ì„ ì–»ìœ¼ë ¤ê³  í•˜ëŠ” ì§€ëª…ì˜ ëª©ë¡ì´ë‹¤
+loc_list = c('ì„œìš¸', 'ëŒ€ì „', 'ë¶€ì‚°')
 
-# °á°ú¹°À» ÃëÇÕÇÏ±â À§ÇÑ ºó º¤ÅÍ
+# ê²°ê³¼ë¬¼ì„ ì·¨í•©í•˜ê¸° ìœ„í•œ ë¹ˆ ë²¡í„°
 geocode_result = c()
 for(loc in loc_list){
   
-  # °Ë»ö¾î¸¦ Á¦¿ÜÇÑ url
+  # ê²€ìƒ‰ì–´ë¥¼ ì œì™¸í•œ url
   url = "http://maps.googleapis.com/maps/api/geocode/xml?sensor=false&language=ko&address='"
   
-  # °Ë»ö¾î¸¦ Æ÷ÇÔ½ÃÄÑ¼­ ¸¸µç ¿ÏÀüÇÑ url
+  # ê²€ìƒ‰ì–´ë¥¼ í¬í•¨ì‹œì¼œì„œ ë§Œë“  ì™„ì „í•œ url
   geocode_url = paste0(url, loc, "'")
   
-  # url¿¡¼­ utf-8 ÀÎÄÚµùÀ¸·Î xmlÀÚ·á¸¦ °¡Á®¿Â´Ù
+  # urlì—ì„œ utf-8 ì¸ì½”ë”©ìœ¼ë¡œ xmlìžë£Œë¥¼ ê°€ì ¸ì˜¨ë‹¤
   geocode_xml = xml(geocode_url, encoding='UTF-8')
   
-  # À§µµ°ªÀ» °¡Á®¿Â´Ù
+  # ìœ„ë„ê°’ì„ ê°€ì ¸ì˜¨ë‹¤
   geocode_lat = geocode_xml %>%
     xml_node('lat') %>%
     xml_text()
   
-  # °æµµ°ªÀ» °¡Á®¿Â´Ù
+  # ê²½ë„ê°’ì„ ê°€ì ¸ì˜¨ë‹¤
   geocode_lon = geocode_xml %>%
     xml_node('lng') %>%
     xml_text()
   
-  # Áö¸í, À§µµ, °æµµ¸¦ 1ÇàÂ¥¸® µ¥ÀÌÅÍ ÇÁ·¹ÀÓÀ¸·Î ±¸¼ºÇÑ´Ù
-  # ÀÌ ¶§ À§µµ,°æµµ°ªÀ» ¼ýÀÚ·Î º¯È¯ÇÑ´Ù
+  # ì§€ëª…, ìœ„ë„, ê²½ë„ë¥¼ 1í–‰ì§œë¦¬ ë°ì´í„° í”„ë ˆìž„ìœ¼ë¡œ êµ¬ì„±í•œë‹¤
+  # ì´ ë•Œ ìœ„ë„,ê²½ë„ê°’ì„ ìˆ«ìžë¡œ ë³€í™˜í•œë‹¤
   geocode_data = data.frame(location = loc, 
                             lat = as.numeric(geocode_lat), 
                             lon = as.numeric(geocode_lon)
                             )
-  # ÃÖÁ¾ °á°ú¹°ÀÌ ÀúÀåµÉ ¿ÀºêÁ§Æ®¿¡ ´©Àû½ÃÄÑ¼­ °ªÀ» ÀúÀåÇÑ´Ù
+  # ìµœì¢… ê²°ê³¼ë¬¼ì´ ì €ìž¥ë  ì˜¤ë¸Œì íŠ¸ì— ëˆ„ì ì‹œì¼œì„œ ê°’ì„ ì €ìž¥í•œë‹¤
   geocode_result = rbind(geocode_result, geocode_data)
 }
 geocode_result
@@ -200,8 +200,8 @@ geocode_result
 
 ```
 ##   location      lat      lon
-## 1     ¼­¿ï 37.56654 126.9780
-## 2     ´ëÀü 36.35041 127.3845
-## 3     ºÎ»ê 35.17955 129.0756
+## 1     ì„œìš¸ 37.56654 126.9780
+## 2     ëŒ€ì „ 36.35041 127.3845
+## 3     ë¶€ì‚° 35.17955 129.0756
 ```
 
