@@ -4,7 +4,7 @@ published: true
 title: 마크다운에 Dropbox 공유 이미지 링크하기
 mathjax: false
 featured: false
-comments: false
+comments: true
 headline: Making blogging easier for masses
 categories: Web
 tags: jekyll

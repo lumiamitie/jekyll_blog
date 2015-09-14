@@ -4,7 +4,7 @@ published: true
 title: Web Scraping with rvest
 mathjax: false
 featured: false
-comments: false
+comments: true
 headline: Making blogging easier for masses
 categories: R Web
 tags: jekyll

@@ -4,7 +4,7 @@ published: true
 title: Geocoding with R
 mathjax: false
 featured: false
-comments: false
+comments: true
 headline: Making blogging easier for masses
 categories: R
 tags: jekyll

@@ -4,7 +4,7 @@ published: true
 title: Jupyter with R
 mathjax: false
 featured: false
-comments: false
+comments: true
 headline: Making blogging easier for masses
 categories: R Python
 tags: jekyll

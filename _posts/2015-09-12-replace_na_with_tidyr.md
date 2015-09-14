@@ -4,7 +4,7 @@ published: true
 title: Replace NA with tidyr
 mathjax: false
 featured: false
-comments: false
+comments: true
 headline: Making blogging easier for masses
 categories: R
 tags: jekyll

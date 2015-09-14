@@ -4,7 +4,7 @@ published: true
 title: koding.com 에서 Jekyll 활용하기
 mathjax: false
 featured: false
-comments: false
+comments: true
 headline: Making blogging easier for masses
 categories: Web
 tags: jekyll

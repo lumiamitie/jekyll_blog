@@ -4,7 +4,7 @@ published: true
 title: D3 - enter/update/exit
 mathjax: false
 featured: true
-comments: false
+comments: true
 headline: Making blogging easier for masses
 categories: D3
 tags: jekyll
