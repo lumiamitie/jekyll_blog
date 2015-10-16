@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: dplyr advanced - NSE
+title: dplyr advanced - Standard Evaluation
 mathjax: false
 featured: false
 comments: true
