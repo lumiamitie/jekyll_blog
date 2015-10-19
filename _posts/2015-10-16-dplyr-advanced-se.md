@@ -3,7 +3,7 @@ layout: post
 published: true
 title: dplyr advanced - Standard Evaluation
 mathjax: false
-featured: false
+featured: true
 comments: true
 headline: Making blogging easier for masses
 categories: R
