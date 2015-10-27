@@ -10,7 +10,7 @@ categories: D3
 tags: jekyll
 ---
 
-![cover-image](../../images/old-book.jpg)
+![cover-image](/images/old-book.jpg)
 
 # D3
 
@@ -52,7 +52,7 @@ d3.select('svg')
 
 d3에서 enter와 관련된 개념을 볼 때 자주 등장하는 그림이 있습니다. 
 
-![](http://dl.dropbox.com/s/l7bin3l0kg2kpxs/d3_enter_update_exit01.PNG)
+![](/images/post_image/d3_enter_update_exit/d3_enter_update_exit01.PNG)
 
 저걸 보고 처음 했던 생각은 '우와 update라는 함수도 있나보네' 였습니다. 하하. enter()라는 함수가 있으니 당연히 update()랑 exit()가 나중에 나오겠구나. 그런데 책을 뒤져봐도 update라는 함수는 안보이죠. 그렇게 멘붕이 시작되었습니다.
 
@@ -71,7 +71,7 @@ d3.select('svg')
 
 ---
 
-![](http://dl.dropbox.com/s/ph3hre70r0n32ct/d3_enter_update_exit02.PNG)
+![](/images/post_image/d3_enter_update_exit/d3_enter_update_exit02.PNG)
 
 그림에서 update는 점선으로 된 사각형이 없습니다. 반면 enter와 exit는 점선으로 특정 요소들을 선택해놓았습니다. enter는 새로 생긴 요소들에 대한 선택이고, exit는 새로 들어온 데이터가 반영되지 않는 요소들을 선택합니다. 그리고 update는 앞에 selectAll이 선택한 요소들을 그대로 받아와서 변경합니다.
 
