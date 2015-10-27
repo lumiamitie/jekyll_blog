@@ -10,7 +10,7 @@ categories: R Python
 tags: jekyll
 ---
 
-![cover-image](../../../images/rocks-waves.jpg)
+![cover-image](/images/rocks-waves.jpg)
 
 ## jupyter
 
@@ -62,8 +62,8 @@ IRkernel::installspec()
 
 이제 jupyter를 실행시키면 새 파일을 생성하는 New 항목에 Python 뿐만 아니라 R이 선택 가능해진다
 
-![](http://dl.dropbox.com/s/yuhz7jc2b5but7g/jupyterwithr00.PNG)
+![](/images/post_image/jupyter_with_r/jupyterwithr00.PNG)
 
 R을 선택해서 새 파일을 만들고 `plot(iris)` 를 작성한 후에 crtl + enter를 눌러서 코드를 실행시키면 아래처럼 제대로 실행되는 모습을 볼 수 있다.
 
-![](http://dl.dropbox.com/s/m98koj5ytjgr54r/jupyterwithr01.PNG)
+![](/images/post_image/jupyter_with_r/jupyterwithr01.PNG)

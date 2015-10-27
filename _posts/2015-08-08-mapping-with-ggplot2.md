@@ -9,7 +9,7 @@ headline: Making blogging easier for masses
 categories: R Visualization
 tags: jekyll
 ---
-![cover-image](../../../images/macphoto.jpg)
+![cover-image](/images/macphoto.jpg)
 여기서는 shp파일을 불러와서 직접 ggplot2를 이용해 지도를 그리는 방법을 설명하려고 한다
 
 
@@ -67,7 +67,7 @@ maptools 패키지를 실행시키면 `Checking rgeos availability` 라는 문�
 plot(shp2)
 ```
 
-![](http://dl.dropbox.com/s/qb64zrq2mqrzftt/unnamed-chunk-3-1.png) 
+![](/images/post_image/mapping_with_ggplot2/unnamed-chunk-3-1.png) 
 
 `ggplot2`를 이용해서 지도를 그리려면 이 데이터를 데이터 프레임으로 변경해야 하는데 `ggplot2::fortify()` 함수를 이용해서 shp 데이터를 데이터 프레임으로 바꿀 수 있다.
 
@@ -118,7 +118,7 @@ ggplot(shp2_ffd,
   geom_path()
 ~~~
 
-![](http://dl.dropbox.com/s/e1t1yel4pas24t6/unnamed-chunk-6-1.png) 
+![](/images/post_image/mapping_with_ggplot2/unnamed-chunk-6-1.png) 
 
 `NAME_1` 변수를 기준으로 구분한 지도는 광역단체로만 구분이 되고, 아래와 같이 `NAME_2` 변수를 기준으로 fortify시킨경우에는 시(도의 경우), 구(서울 등)로 구분되는 것을 볼 수 있다.
 
@@ -129,7 +129,7 @@ ggplot(shp2_ffd2,
   geom_path()
 ~~~
 
-![](http://dl.dropbox.com/s/v2bkis5y2tf71tj/unnamed-chunk-7-1.png) 
+![](/images/post_image/mapping_with_ggplot2/unnamed-chunk-7-1.png) 
 
 `geom_path()`가 아니라 `geom_polygon()`을 사용하면 지역별로 색상을 채우는 것이 가능하다. 적용할만한 다른 데이터를 추가하면 히트맵이나 코로플레스같은 시각화를 할 수 있다
 
@@ -139,7 +139,7 @@ ggplot(shp2_ffd, aes(x=long, y=lat, group=group)) +
   geom_polygon(aes(fill=id))
 ~~~
 
-![](http://dl.dropbox.com/s/tl02ufsiry4xgqz/unnamed-chunk-8-1.png) 
+![](/images/post_image/mapping_with_ggplot2/unnamed-chunk-8-1.png) 
 
 `dplyr`패키지를 불러와서 난수를 데이터에 대입시키고 어떻게 ggplot2를 이용할 수 있을지 살펴보자.
 
@@ -192,7 +192,7 @@ ggplot(shp2_data, aes(x=long, y=lat, group=group)) +
   geom_polygon(aes(fill = value))
 ~~~
 
-![](http://dl.dropbox.com/s/o7319yk4d0mv023/unnamed-chunk-10-1.png) 
+![](/images/post_image/mapping_with_ggplot2/unnamed-chunk-10-1.png) 
 
 원래의 fortify된 지도에 `left_join`을 해서 값을 대입하고, 추가한 열을 `geom_polygon`에서 fill값으로 잡아주면 된다. 색상을 변경하려면 scale 값을 조정해주는 함수를 사용하면 된다. 여기서는 `RColorBrewer`패키지를 이용하는 `scale_fill_distiller`함수를 사용했다.
 
@@ -203,7 +203,7 @@ ggplot(shp2_data, aes(x=long, y=lat, group=group)) +
   scale_fill_distiller(palette = "Spectral")
 ~~~
 
-![](http://dl.dropbox.com/s/x91bxbrbve2j1in/unnamed-chunk-11-1.png) 
+![](/images/post_image/mapping_with_ggplot2/unnamed-chunk-11-1.png) 
 
 ---
 
@@ -223,5 +223,5 @@ ggplot(seoul_ffd, aes(x=long, y=lat, group=group)) +
   geom_polygon(aes(fill=id))
 ~~~
 
-![](http://dl.dropbox.com/s/tdf3bk6cpqxfwiz/unnamed-chunk-13-1.png) 
+![](/images/post_image/mapping_with_ggplot2/unnamed-chunk-13-1.png) 
 

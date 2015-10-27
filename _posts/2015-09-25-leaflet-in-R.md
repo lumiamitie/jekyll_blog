@@ -10,7 +10,7 @@ categories: R Visualization
 tags: jekyll
 ---
 
-![cover-image](../../../images/desk-pen-ruler.jpg)
+![cover-image](/images/desk-pen-ruler.jpg)
 
 # leaflet in R
 
@@ -71,7 +71,7 @@ leaflet(wifi_data) %>%
   addTiles() %>% 
   addCircles(lng = ~lon, lat=~lat)
 ```
-![](http://dl.dropbox.com/s/bhrbn4r8xsp9ti4/leaflet01.PNG)
+![](/images/post_image/leaflet_in_R/leaflet01.PNG)
 
 ---
 
@@ -94,7 +94,7 @@ leaflet(wifi_data) %>%
   addCircles(lng = ~lon, lat=~lat)
 ```
 
-![](http://dl.dropbox.com/s/jm6wmogehf5d7hh/leaflet02.PNG)
+![](/images/post_image/leaflet_in_R/leaflet02.PNG)
 
 
 ```r
@@ -104,7 +104,7 @@ leaflet(wifi_data) %>%
   addCircles(lng = ~lon, lat=~lat)
 ```
 
-![](http://dl.dropbox.com/s/qr0ee0sl0kpxrac/leaflet03.PNG)
+![](/images/post_image/leaflet_in_R/leaflet03.PNG)
 
 ---
 
@@ -125,7 +125,7 @@ leaflet(wifi_data) %>%
   addCircles(lng = ~lon, lat=~lat, popup = ~div)
 ```
 
-![](http://dl.dropbox.com/s/xf3rp84to9hv4p2/leaflet04.PNG)
+![](/images/post_image/leaflet_in_R/leaflet04.PNG)
 
 ---
 
@@ -159,7 +159,7 @@ leaflet(wifi_data) %>%
 
 
 
-![](http://dl.dropbox.com/s/a9wzgklzwycudek/leaflet05.PNG)
+![](/images/post_image/leaflet_in_R/leaflet05.PNG)
 
 ---
 
@@ -188,7 +188,7 @@ leaflet(wifi_data) %>%
 ```
 
 
-![](http://dl.dropbox.com/s/8q1paxvwuetzh4d/leaflet06.PNG)
+![](/images/post_image/leaflet_in_R/leaflet06.PNG)
 
 
 <br />
@@ -224,4 +224,4 @@ leaflet() %>%
                    options = layersControlOptions(collapsed = FALSE))
 ```
 
-![](http://dl.dropbox.com/s/bext3z35yifutvn/leaflet07.PNG)
+![](/images/post_image/leaflet_in_R/leaflet07.PNG)

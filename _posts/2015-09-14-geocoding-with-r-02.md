@@ -10,7 +10,7 @@ categories: R
 tags: jekyll
 ---
 
-![cover-image](../../images/macphoto.jpg)
+![cover-image](/images/macphoto.jpg)
 
 ## Geocoding with ggmap::geocode
 
@@ -232,5 +232,5 @@ seoul_map +
 ```
 
 
-![](http://dl.dropbox.com/s/aj5e3hx38y0n24h/unnamed-chunk-12-1.png) 
+![](/images/post_image/geocoding_with_r-02/unnamed-chunk-12-1.png) 
 
