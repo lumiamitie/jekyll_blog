@@ -36,6 +36,7 @@ y_scale
 x축의 항목이 ordinal(명목형) 변수일 때 `x_scale` 함수는 해당 변수에 맞는 x축 위치를 제공한다
 
 그림으로 표현하면 아래와 같다
+
 ![](/images/post_image/grouped_bar/grouped_bar01.PNG)
 
 x_scale의 결과물이 반환하는 좌표값은 각 막대의 왼쪽 끝에 해당하는 x좌표가 된다
