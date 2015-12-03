@@ -19,6 +19,7 @@ tags: R data tidyr hadley
 **Tidyr과 관련된 이전 포스팅**
 
 [Tidy Data](http://lumiamitie.github.io/r/tidy-data/)
+
 [relace_na with tidyr](http://lumiamitie.github.io/r/replace_na_with_tidyr/)
 
 <br />
