@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: tidyr Utilites
+title: tidyr Utilities
 mathjax: false
 featured: false
 comments: true
