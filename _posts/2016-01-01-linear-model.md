@@ -580,26 +580,12 @@ mse_cars2
 
 ```r
 library(dplyr)
-```
 
-```
-## 
-## Attaching package: 'dplyr'
-## 
-## The following objects are masked from 'package:stats':
-## 
-##     filter, lag
-## 
-## The following objects are masked from 'package:base':
-## 
-##     intersect, setdiff, setequal, union
-```
-
-```r
 diff_cars2 = data.frame(
     price = cars_ts$Price,
     pred = pred_cars2) %>% 
-  arrange(price)
+  arrange(price) %>% 
+  mutate(idx = row_number())
 ```
 
 <br />
@@ -609,26 +595,19 @@ diff_cars2 = data.frame(
 
 ```r
 diff_cars2_tidy = diff_cars2 %>% 
-  tidyr::gather(key = "level", value = "value") %>% 
-  group_by(level) %>% 
-  arrange(value) %>% 
-  mutate(idx = row_number())
+  tidyr::gather(key = "level", value = "value", price:pred)
 
 head(diff_cars2_tidy)
 ```
 
 ```
-## Source: local data frame [6 x 3]
-## Groups: level [1]
-## 
-##    level    value   idx
-##   (fctr)    (dbl) (int)
-## 1  price  8638.93     1
-## 2  price  9789.04     2
-## 3  price 10354.04     3
-## 4  price 10813.34     4
-## 5  price 10921.95     5
-## 6  price 11343.05     6
+##   idx level    value
+## 1   1 price  8638.93
+## 2   2 price  9789.04
+## 3   3 price 10354.04
+## 4   4 price 10813.34
+## 5   5 price 10921.95
+## 6   6 price 11343.05
 ```
 
 ```r
@@ -1042,10 +1021,9 @@ mse_ridge = mean((pred_ridge - cars_ts$Price)^2)
 df_ridge = data.frame(
     price = cars_ts$Price,
     pred = pred_ridge[,1]) %>% 
-  tidyr::gather(key = 'level', value = 'value') %>% 
-  group_by(level) %>% 
-  arrange(value) %>% 
-  mutate(idx = row_number())
+  arrange(price) %>% 
+  mutate(idx = row_number()) %>% 
+  tidyr::gather(key = 'level', value = 'value', price:pred)
 
 ggplot(df_ridge, aes(x = idx, y = value, colour = level))+
   geom_point()+
@@ -1097,12 +1075,11 @@ lasso의 경우도 실제 값과 예측결과를 그래프로 비교해볼 수 �
 
 ```r
 df_lasso = data.frame(
-  price = cars_ts$Price,
-  pred = pred_lasso[,1]) %>% 
-  tidyr::gather(key = 'level', value = 'value') %>% 
-  group_by(level) %>% 
-  arrange(value) %>% 
-  mutate(idx = row_number())
+    price = cars_ts$Price,
+    pred = pred_lasso[,1]) %>% 
+  arrange(price) %>% 
+  mutate(idx = row_number()) %>% 
+  tidyr::gather(key = 'level', value = 'value', price:pred)
 
 ggplot(df_lasso, aes(x = idx, y = value, colour = level))+
   geom_point()+
@@ -1179,12 +1156,11 @@ pred_lasso2 = predict(
 )
 
 df_lasso2 = data.frame(
-  price = cars_ts2$Price,
-  pred = pred_lasso2[,1]) %>% 
-  tidyr::gather(key = 'level', value = 'value') %>% 
-  group_by(level) %>% 
-  arrange(value) %>% 
-  mutate(idx = row_number())
+    price = cars_ts2$Price,
+    pred = pred_lasso2[,1]) %>% 
+  arrange(price) %>% 
+  mutate(idx = row_number()) %>% 
+  tidyr::gather(key = 'level', value = 'value', price:pred)
 
 ggplot(df_lasso2, aes(x = idx, y = value, colour = level))+
   geom_point()+
