@@ -46,7 +46,7 @@ ggplot(df_largenum, aes(x = label, y = num)) +
   geom_bar(stat = 'identity')
 ```
 
-![](/images/post_image/ggplot2_scale_label/unnamed-chunk-2-1.png)<!-- -->
+![](/images/post_image/ggplot2_scale_label/unnamed-chunk-2-1.png)
 
 <br />
 
@@ -61,7 +61,7 @@ ggplot(df_largenum, aes(x = label, y = num)) +
   scale_y_continuous(labels = scales::comma)
 ```
 
-![](/images/post_image/ggplot2_scale_label/unnamed-chunk-3-1.png)<!-- -->
+![](/images/post_image/ggplot2_scale_label/unnamed-chunk-3-1.png)
 
 <br />
 
@@ -89,7 +89,7 @@ ggplot(economics, aes(x = date, y = pop)) +
   geom_line()
 ```
 
-![](/images/post_image/ggplot2_scale_label/unnamed-chunk-4-1.png)<!-- -->
+![](/images/post_image/ggplot2_scale_label/unnamed-chunk-4-1.png)
 
 <br />
 
@@ -119,7 +119,7 @@ ggplot(economics, aes(x = date, y = pop)) +
   scale_y_continuous(labels = label_ko_num)
 ```
 
-![](/images/post_image/ggplot2_scale_label/unnamed-chunk-6-1.png)<!-- -->
+![](/images/post_image/ggplot2_scale_label/unnamed-chunk-6-1.png)
 
 <br />
 
@@ -141,7 +141,7 @@ ggplot(diamonds, aes(x = cut, fill = color)) +
   scale_fill_brewer(palette = 'Paired')
 ```
 
-![](/images/post_image/ggplot2_scale_label/unnamed-chunk-7-1.png)<!-- -->
+![](/images/post_image/ggplot2_scale_label/unnamed-chunk-7-1.png)
 
 <br />
 
@@ -155,7 +155,7 @@ ggplot(diamonds, aes(x = cut, fill = color)) +
   scale_fill_brewer(palette = 'Paired')
 ```
 
-![](/images/post_image/ggplot2_scale_label/unnamed-chunk-8-1.png)<!-- -->
+![](/images/post_image/ggplot2_scale_label/unnamed-chunk-8-1.png)
 
 <br />
 <br />
