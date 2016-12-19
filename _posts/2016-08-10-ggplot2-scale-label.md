@@ -4,7 +4,7 @@ published: true
 title: ggplot2 축 레이블 포맷 바꾸기
 mathjax: false
 featured: true
-comments: false
+comments: true
 headline: ggplot2 scale labels
 categories: R Visualization
 tags: ggplot2 label

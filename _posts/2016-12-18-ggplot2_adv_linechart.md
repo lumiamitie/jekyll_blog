@@ -4,7 +4,7 @@ published: true
 title: KOSPI200 데이터를 가지고 선그래프 그려보기
 mathjax: false
 featured: true
-comments: false
+comments: true
 headline: ggplot2 scale labels
 categories: R
 tags: ggplot2 R
