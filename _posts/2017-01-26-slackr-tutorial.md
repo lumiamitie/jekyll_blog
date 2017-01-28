@@ -23,7 +23,8 @@ tags: R slack
 R에서 슬랙으로 메세지를 보내기 전에 준비해야 할 것들이 있다. 
 
 - Slack에서 **API token**을 받아야 한다
-	- 각 team의 App Directory (Apps & Integrations) > Manage > Custom Integrations > Bots > Add Configuration 로 들어간다
+	- 각 team의 App Directory (Apps & Integrations) > Build > Make a Custom Integration > Bots > Add Bot integration 으로 봇을 생성한다
+	- App Directory > Manage > Custom Integrations > Bots > Add Configuration 로 들어간다
 	- Bot을 등록하고 API token을 받는다
 	- API token은 `xxxx-000000000000-aaaaaaaaaaaaaaaaaaaaaaaa` 과 같은 형태로 된 문자열이다
 - `install.packages('slackr')` 로 **slackr 패키지**를 설치한다
