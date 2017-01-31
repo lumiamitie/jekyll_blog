@@ -5,7 +5,7 @@ title: Jupyter with R
 mathjax: false
 featured: false
 comments: true
-headline: Making blogging easier for masses
+headline: Jupyter for R
 categories: R Python
 tags: jekyll
 ---
@@ -67,3 +67,16 @@ IRkernel::installspec()
 R을 선택해서 새 파일을 만들고 `plot(iris)` 를 작성한 후에 crtl + enter를 눌러서 코드를 실행시키면 아래처럼 제대로 실행되는 모습을 볼 수 있다.
 
 ![](/images/post_image/jupyter_with_r/jupyterwithr01.PNG)
+
+---
+
+**2017-01-31 추가**
+
+이유는 잘 모르겠지만 이 포스팅의 조회수가 정말 꾸준하게 나오는 것 같아서 몇 줄 추가하려고 합니다.
+
+Anaconda가 설치되어 있을 경우에는 `conda install -c r r-essentials` 명령어를 통해 쉽게 R 커널을 세팅할 수 있습니다. 특히 **R Essentials 번들**을 설치하게 되면 많이 사용되는 R 라이브러리가 설치된 상태로 커널까지 세팅되기 때문에 편리하게 사용할 수 있습니다. 자세한 내용은 [관련 링크](https://www.continuum.io/blog/developer/jupyter-and-conda-r) 를 통해 확인해 보세요.
+
+저는 요즘 R notebooks 를 사용해보고 있습니다. 기존의 Rmarkdown의 경우에는 knit할 때마다 시간이 너무 오래걸려서, 문서가 길어지거나 작업이 오래걸리는 경우에는 사용하기가 많이 꺼려졌었는데요. R notebooks을 사용하면 jupyter notebook을 사용하는 것처럼 코드작성과 문서작업을 동시에 진행할 수 있어서 좋습니다. 아직 jupyter에 비하면 불편한 점이 많지만 버전관리는 더 쉽다는 장점이 있어요. Rstudio를 주로 사용하시는 분들이라면 한 번쯤 확인해보시면 좋을 것 같습니다. <http://rmarkdown.rstudio.com/r_notebooks.html>
+
+
+
